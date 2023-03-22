@@ -26,10 +26,17 @@
     ]
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "6.3.0",
+    "@fortawesome/free-solid-svg-icons": "6.3.0",
+    "@fortawesome/react-fontawesome": "0.2.0",
     "@next/font": "13.1.6",
+    "formik": "2.2.9",
+    "framer-motion": "10.2.3",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "4.8.0",
+    "yup": "1.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "17.4.2",
