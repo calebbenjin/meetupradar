@@ -5,10 +5,12 @@ import SortByLocation from './common/SortByLocation';
 
 const RightNavigation = () => {
   return (
-    <div className="w-2/4 sm:px-6">
-      <SearchInput />
-      <SortMeetup />
-      <SortByLocation />
+    <div className="w-2/4 relative">
+      <div className="fixed h-screen sm:px-6  border-solid border-l border-gray-300">
+        <SearchInput />
+        <SortMeetup />
+        <SortByLocation />
+      </div>
     </div>
   );
 };
