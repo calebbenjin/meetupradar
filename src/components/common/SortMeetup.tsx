@@ -31,16 +31,16 @@ const meetups = [
 const SortMeetup = () => {
   return (
     <div className="mt-10">
-      <h2 className="font-semibold text-2xl text-sky-600 mb-6 mb-3">
+      <h2 className="font-semibold text-xl text-sky-600 mb-6 mb-3">
         Sort Meetup
       </h2>
 
       {meetups.map((meetup) => (
         <div
           key={meetup.id}
-          className="leading-loose flex items-center cursor-pointer hover:text-sky-600 mb-4 justify-between"
+          className="flex items-center cursor-pointer hover:text-sky-600 mb-4 justify-between"
         >
-          <p className="font-semibold">{meetup.title}</p>
+          <p>{meetup.title}</p>
           <BsThreeDots className="text-gray-400" />
         </div>
       ))}

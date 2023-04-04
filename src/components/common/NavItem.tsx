@@ -13,21 +13,15 @@ function NavItem({ href, icon, text }: NavProps) {
   const isActive = router.asPath === href;
 
   return (
-    <div
-      className={
-        isActive
-          ? `flex items-center mb-6 p-2 rounded-md shadow-md`
-          : `flex items-center mb-6 cursor-pointer p-3 rounded hover:shadow-md`
-      }
-    >
+    <div className="flex items-center mb-2 cursor-pointer p-3 rounded hover:shadow-md">
       <>{icon}</>
       <NextLink
         href={href}
         className={
-          isActive ? `font-bold text-xl text-sky-600` : `text-xl text-gray-600`
+          isActive ? `font-bold text-lg text-sky-600` : `text-lg text-gray-600`
         }
       >
-        <span className="capsize md:text-1xl">{text}</span>
+        <span className="capsize sm:text-lg">{text}</span>
       </NextLink>
     </div>
   );

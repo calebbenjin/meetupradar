@@ -5,7 +5,7 @@ import SortByLocation from './common/SortByLocation';
 
 const RightNavigation = () => {
   return (
-    <div className="w-2/4 sm:px-6 sticky top-0">
+    <div className="w-2/4 sm:px-6">
       <SearchInput />
       <SortMeetup />
       <SortByLocation />

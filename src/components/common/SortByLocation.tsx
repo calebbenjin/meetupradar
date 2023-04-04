@@ -27,16 +27,16 @@ const locations = [
 const SortByLocation = () => {
   return (
     <div className="mt-10">
-      <h2 className="font-semibold text-2xl text-sky-600 mb-6 mb-3">
+      <h2 className="font-semibold text-xl text-sky-600 mb-6 mb-3">
         Sort By Location
       </h2>
 
       {locations.map((location) => (
         <div
           key={location.id}
-          className="leading-loose flex items-center cursor-pointer hover:text-sky-600 mb-4 justify-between"
+          className="flex items-center cursor-pointer hover:text-sky-600 mb-4 justify-between"
         >
-          <p className="font-semibold">{location.title}</p>
+          <p>{location.title}</p>
           <BsThreeDots className="text-gray-400" />
         </div>
       ))}
